@@ -5,18 +5,22 @@ import xml.etree.ElementTree as ET
 import os
 import sys
 import time
+from colorama import Fore, Back, Style, init
 
-# --- COLORI ANSI BASE ---
+# Inizializza colorama per Windows
+init(autoreset=True)
+
+# --- COLORI COLORAMA ---
 class Colori:
-    RESET = '\033[0m'
-    ROSSO = '\033[31m'
-    VERDE = '\033[32m'
-    GIALLO = '\033[33m'
-    BLU = '\033[34m'
-    MAGENTA = '\033[35m'
-    CIANO = '\033[36m'
-    GRIGIO = '\033[90m'
-    BOLD = '\033[1m'
+    RESET = Style.RESET_ALL
+    ROSSO = Fore.RED
+    VERDE = Fore.GREEN
+    GIALLO = Fore.YELLOW
+    BLU = Fore.BLUE
+    MAGENTA = Fore.MAGENTA
+    CIANO = Fore.CYAN
+    GRIGIO = Fore.LIGHTBLACK_EX
+    BOLD = Style.BRIGHT
 
 # Statistiche client
 statistiche = {

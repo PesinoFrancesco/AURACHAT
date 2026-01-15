@@ -5,18 +5,22 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import os
+from colorama import Fore, Back, Style, init
 
-# --- COLORI ANSI BASE ---
+# Inizializza colorama per Windows
+init(autoreset=True)
+
+# --- COLORI COLORAMA ---
 class Colori:
-    RESET = '\033[0m'
-    ROSSO = '\033[31m'
-    VERDE = '\033[32m'
-    GIALLO = '\033[33m'
-    BLU = '\033[34m'
-    MAGENTA = '\033[35m'
-    CIANO = '\033[36m'
-    GRIGIO = '\033[90m'
-    BOLD = '\033[1m'
+    RESET = Style.RESET_ALL
+    ROSSO = Fore.RED
+    VERDE = Fore.GREEN
+    GIALLO = Fore.YELLOW
+    BLU = Fore.BLUE
+    MAGENTA = Fore.MAGENTA
+    CIANO = Fore.CYAN
+    GRIGIO = Fore.LIGHTBLACK_EX
+    BOLD = Style.BRIGHT
 
 # Statistiche globali del server
 statistiche = {
@@ -242,7 +246,7 @@ def gestisci_client(mio_socket, client_address, log_filename):
             else:
                 risposta = f"Comando '{data}' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT"
                 mio_socket.send(risposta.encode('utf-8'))
-                print(f"{Colori.GIALLO}Comando non riconosciuto da {Colori.BLU}{client_name}{Colori.RESET}: {data}{Colori.RESET}")
+                print(f"{Colori.GIALLO}Comando non riconosciuto da {Colori.BLU}{client_name}{Colori.RESET}: {data}")
                 log_to_xml(log_filename, "WARNING", "INVALID_COMMAND",
                           f"Comando invalido '{data}' da {client_id} ({client_name})",
                           client=client_id,

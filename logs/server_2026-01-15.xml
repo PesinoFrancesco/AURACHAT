@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log server_name="W11STAT-7-221" date="2026-01-15">
+  <session start_time="2026-01-15 10:50:02" end_time="2026-01-15 11:27:53">
+    <entry timestamp="10:50:02" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="10:50:04" level="INFO" type="CONNECTION">
+      <message>Connessione da 127.0.0.1:52814 (client1)</message>
+      <client_ip>127.0.0.1</client_ip>
+      <client_port>52814</client_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:50:43" level="INFO" type="REQUEST">
+      <message>Richiesta 'TIME' da 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+    </entry>
+    <entry timestamp="10:50:43" level="INFO" type="RESPONSE">
+      <message>Risposta TIME inviata a 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+      <response>10:50:43</response>
+    </entry>
+    <entry timestamp="10:51:07" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="10:51:07" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="10:51:22" level="INFO" type="REQUEST">
+      <message>Richiesta 'NAME' da 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+    </entry>
+    <entry timestamp="10:51:22" level="INFO" type="RESPONSE">
+      <message>Risposta NAME inviata a 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+      <response>W11STAT-7-221</response>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="DISCONNECTION">
+      <message>Client 127.0.0.1:52814 (client1) ha chiuso la connessione</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <reason>socket_closed</reason>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 127.0.0.1:52814 (client1)</message>
+      <client>127.0.0.1:52814</client>
+      <client_name>client1</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="10:56:49" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="10:56:52" level="INFO" type="CONNECTION">
+      <message>Connessione da 172.16.7.219:54659 (client1)</message>
+      <client_ip>172.16.7.219</client_ip>
+      <client_port>54659</client_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:56:55" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="10:56:55" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="10:57:02" level="INFO" type="REQUEST">
+      <message>Richiesta 'come stai ?' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>come stai ?</command>
+    </entry>
+    <entry timestamp="10:57:02" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'come stai ?' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <invalid_command>come stai ?</invalid_command>
+    </entry>
+    <entry timestamp="10:57:07" level="INFO" type="REQUEST">
+      <message>Richiesta 'TIME' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+    </entry>
+    <entry timestamp="10:57:07" level="INFO" type="RESPONSE">
+      <message>Risposta TIME inviata a 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+      <response>10:57:07</response>
+    </entry>
+    <entry timestamp="10:57:12" level="INFO" type="REQUEST">
+      <message>Richiesta 'NAME' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+    </entry>
+    <entry timestamp="10:57:12" level="INFO" type="RESPONSE">
+      <message>Risposta NAME inviata a 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+      <response>W11STAT-7-221</response>
+    </entry>
+    <entry timestamp="10:57:15" level="INFO" type="REQUEST">
+      <message>Richiesta 'STATS' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>STATS</command>
+    </entry>
+    <entry timestamp="10:57:15" level="INFO" type="STATS">
+      <message>Statistiche inviate a 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <total_connections>1</total_connections>
+      <active_connections>1</active_connections>
+    </entry>
+    <entry timestamp="10:57:28" level="INFO" type="CONNECTION">
+      <message>Connessione da 127.0.0.1:63043 (client2)</message>
+      <client_ip>127.0.0.1</client_ip>
+      <client_port>63043</client_port>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:29" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="10:57:29" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="10:57:32" level="INFO" type="REQUEST">
+      <message>Richiesta 'sono filippo' da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <command>sono filippo</command>
+    </entry>
+    <entry timestamp="10:57:32" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'sono filippo' da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <invalid_command>sono filippo</invalid_command>
+    </entry>
+    <entry timestamp="10:57:34" level="INFO" type="REQUEST">
+      <message>Richiesta 'TIME' da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <command>TIME</command>
+    </entry>
+    <entry timestamp="10:57:34" level="INFO" type="RESPONSE">
+      <message>Risposta TIME inviata a 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <command>TIME</command>
+      <response>10:57:34</response>
+    </entry>
+    <entry timestamp="10:58:08" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="10:58:08" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:58:09" level="INFO" type="DISCONNECTION">
+      <message>Client 127.0.0.1:63043 (client2) ha chiuso la connessione</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <reason>socket_closed</reason>
+    </entry>
+    <entry timestamp="10:58:09" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 127.0.0.1:63043 (client2)</message>
+      <client>127.0.0.1:63043</client>
+      <client_name>client2</client_name>
+      <active_threads>2</active_threads>
+    </entry>
+    <entry timestamp="10:58:14" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="10:58:14" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:58:14" level="INFO" type="DISCONNECTION">
+      <message>Client 172.16.7.219:54659 (client1) ha chiuso la connessione</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <reason>socket_closed</reason>
+    </entry>
+    <entry timestamp="10:58:14" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 172.16.7.219:54659 (client1)</message>
+      <client>172.16.7.219:54659</client>
+      <client_name>client1</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="10:58:19" level="INFO" type="CONNECTION">
+      <message>Connessione da 172.16.7.219:62859 (client3)</message>
+      <client_ip>172.16.7.219</client_ip>
+      <client_port>62859</client_port>
+      <client_name>client3</client_name>
+    </entry>
+    <entry timestamp="10:59:37" level="WARNING" type="CONNECTION_ERROR">
+      <message>Connessione interrotta da 172.16.7.219:62859 (client3)</message>
+      <client>172.16.7.219:62859</client>
+      <client_name>client3</client_name>
+      <error_type>ConnectionResetError</error_type>
+    </entry>
+    <entry timestamp="10:59:38" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 172.16.7.219:62859 (client3)</message>
+      <client>172.16.7.219:62859</client>
+      <client_name>client3</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="11:02:01" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="11:02:08" level="INFO" type="CONNECTION">
+      <message>Connessione da 127.0.0.1:54012 (client1)</message>
+      <client_ip>127.0.0.1</client_ip>
+      <client_port>54012</client_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:02:21" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="11:02:21" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="11:02:45" level="INFO" type="REQUEST">
+      <message>Richiesta 'NAME' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+    </entry>
+    <entry timestamp="11:02:45" level="INFO" type="RESPONSE">
+      <message>Risposta NAME inviata a 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+      <response>W11STAT-7-221</response>
+    </entry>
+    <entry timestamp="11:03:11" level="INFO" type="CONNECTION">
+      <message>Connessione da 172.16.7.219:54740 (client2)</message>
+      <client_ip>172.16.7.219</client_ip>
+      <client_port>54740</client_port>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="11:03:14" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 172.16.7.219:54740 (client2)</message>
+      <client>172.16.7.219:54740</client>
+      <client_name>client2</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="11:03:14" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 172.16.7.219:54740 (client2)</message>
+      <client>172.16.7.219:54740</client>
+      <client_name>client2</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="11:03:17" level="INFO" type="REQUEST">
+      <message>Richiesta 'HOSTNAME' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>HOSTNAME</command>
+    </entry>
+    <entry timestamp="11:03:17" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'HOSTNAME' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <invalid_command>HOSTNAME</invalid_command>
+    </entry>
+    <entry timestamp="11:03:22" level="WARNING" type="CONNECTION_ERROR">
+      <message>Connessione interrotta da 172.16.7.219:54740 (client2)</message>
+      <client>172.16.7.219:54740</client>
+      <client_name>client2</client_name>
+      <error_type>ConnectionResetError</error_type>
+    </entry>
+    <entry timestamp="11:03:22" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 172.16.7.219:54740 (client2)</message>
+      <client>172.16.7.219:54740</client>
+      <client_name>client2</client_name>
+      <active_threads>2</active_threads>
+    </entry>
+    <entry timestamp="11:03:35" level="INFO" type="REQUEST">
+      <message>Richiesta 'NAME' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+    </entry>
+    <entry timestamp="11:03:35" level="INFO" type="RESPONSE">
+      <message>Risposta NAME inviata a 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+      <response>W11STAT-7-221</response>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="DISCONNECTION">
+      <message>Client 127.0.0.1:54012 (client1) ha chiuso la connessione</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <reason>socket_closed</reason>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 127.0.0.1:54012 (client1)</message>
+      <client>127.0.0.1:54012</client>
+      <client_name>client1</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="11:08:48" level="INFO" type="CONNECTION">
+      <message>Connessione da 172.16.7.219:53712 (client3)</message>
+      <client_ip>172.16.7.219</client_ip>
+      <client_port>53712</client_port>
+      <client_name>client3</client_name>
+    </entry>
+    <entry timestamp="11:08:51" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 172.16.7.219:53712 (client3)</message>
+      <client>172.16.7.219:53712</client>
+      <client_name>client3</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="11:08:51" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 172.16.7.219:53712 (client3)</message>
+      <client>172.16.7.219:53712</client>
+      <client_name>client3</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="11:09:07" level="WARNING" type="CONNECTION_ERROR">
+      <message>Connessione interrotta da 172.16.7.219:53712 (client3)</message>
+      <client>172.16.7.219:53712</client>
+      <client_name>client3</client_name>
+      <error_type>ConnectionResetError</error_type>
+    </entry>
+    <entry timestamp="11:09:07" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 172.16.7.219:53712 (client3)</message>
+      <client>172.16.7.219:53712</client>
+      <client_name>client3</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="11:17:30" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="11:17:33" level="INFO" type="CONNECTION">
+      <message>Connessione da 127.0.0.1:49792 (client1)</message>
+      <client_ip>127.0.0.1</client_ip>
+      <client_port>49792</client_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:34" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="11:17:35" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="11:17:39" level="INFO" type="REQUEST">
+      <message>Richiesta 'TIME' da 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+    </entry>
+    <entry timestamp="11:17:39" level="INFO" type="RESPONSE">
+      <message>Risposta TIME inviata a 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+      <response>11:17:39</response>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="DISCONNECTION">
+      <message>Client 127.0.0.1:49792 (client1) ha chiuso la connessione</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <reason>socket_closed</reason>
+    </entry>
+    <entry timestamp="11:17:54" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 127.0.0.1:49792 (client1)</message>
+      <client>127.0.0.1:49792</client>
+      <client_name>client1</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="11:26:35" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="11:26:43" level="INFO" type="CONNECTION">
+      <message>Connessione da 127.0.0.1:51644 (client1)</message>
+      <client_ip>127.0.0.1</client_ip>
+      <client_port>51644</client_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:26:52" level="INFO" type="REQUEST">
+      <message>Richiesta 'ciao' da 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <command>ciao</command>
+    </entry>
+    <entry timestamp="11:26:52" level="WARNING" type="INVALID_COMMAND">
+      <message>Comando invalido 'ciao' da 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <invalid_command>ciao</invalid_command>
+    </entry>
+    <entry timestamp="11:26:59" level="INFO" type="REQUEST">
+      <message>Richiesta 'NAME' da 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+    </entry>
+    <entry timestamp="11:26:59" level="INFO" type="RESPONSE">
+      <message>Risposta NAME inviata a 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <command>NAME</command>
+      <response>W11STAT-7-221</response>
+    </entry>
+    <entry timestamp="11:27:05" level="INFO" type="REQUEST">
+      <message>Richiesta 'TIME' da 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+    </entry>
+    <entry timestamp="11:27:05" level="INFO" type="RESPONSE">
+      <message>Risposta TIME inviata a 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <command>TIME</command>
+      <response>11:27:05</response>
+    </entry>
+    <entry timestamp="11:27:44" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="11:27:44" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:44" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per 127.0.0.1:51644 (client1)</message>
+      <client>127.0.0.1:51644</client>
+      <client_name>client1</client_name>
+      <active_threads>1</active_threads>
+    </entry>
+    <entry timestamp="11:27:53" level="INFO" type="SERVER_SHUTDOWN">
+      <message>Server chiuso correttamente</message>
+    </entry>
+    <final_statistics>
+      <totale-connessioni>1</totale-connessioni>
+      <connessioni-attive>0</connessioni-attive>
+      <comandi-time>1</comandi-time>
+      <comandi-name>1</comandi-name>
+      <comandi-exit>1</comandi-exit>
+      <comandi-invalidi>1</comandi-invalidi>
+    </final_statistics>
+  </session>
+</log>

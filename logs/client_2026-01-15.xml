@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log client_name="W11STAT-7-221" date="2026-01-15">
+  <session start_time="2026-01-15 10:49:40" end_time="2026-01-15 11:27:45">
+    <entry timestamp="10:49:40" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato</message>
+    </entry>
+    <entry timestamp="10:49:40" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="10:49:42" level="ERROR" type="CONNECTION_REFUSED">
+      <message>Server non raggiungibile su 127.0.0.1:12345 (tentativo 1/3)</message>
+      <attempt>1</attempt>
+      <server>127.0.0.1:12345</server>
+    </entry>
+    <entry timestamp="10:49:45" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 2/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>2</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="10:49:47" level="ERROR" type="CONNECTION_REFUSED">
+      <message>Server non raggiungibile su 127.0.0.1:12345 (tentativo 2/3)</message>
+      <attempt>2</attempt>
+      <server>127.0.0.1:12345</server>
+    </entry>
+    <entry timestamp="10:49:49" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 3/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>3</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="10:49:51" level="ERROR" type="CONNECTION_REFUSED">
+      <message>Server non raggiungibile su 127.0.0.1:12345 (tentativo 3/3)</message>
+      <attempt>3</attempt>
+      <server>127.0.0.1:12345</server>
+    </entry>
+    <entry timestamp="10:49:51" level="ERROR" type="CONNECTION_FAILED">
+      <message>Impossibile connettersi al server dopo tutti i tentativi</message>
+      <total_attempts>3</total_attempts>
+    </entry>
+    <entry timestamp="10:49:51" level="ERROR" type="STARTUP_FAILED">
+      <message>Avvio client fallito: impossibile connettersi</message>
+    </entry>
+    <entry timestamp="10:50:04" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato</message>
+    </entry>
+    <entry timestamp="10:50:04" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="10:50:04" level="INFO" type="CONNECTION">
+      <message>Connesso al server 127.0.0.1:12345</message>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:50:43" level="INFO" type="SEND">
+      <message>Inviato comando: TIME</message>
+      <command>TIME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:50:44" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Ora corrente: 10:50:43</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:07" level="INFO" type="SEND">
+      <message>Inviato comando: ciao</message>
+      <command>ciao</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:07" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'ciao' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:22" level="INFO" type="SEND">
+      <message>Inviato comando: NAME</message>
+      <command>NAME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:22" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Hostname server: W11STAT-7-221</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Disconnessione in corso...</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="10:51:29" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <client_name>client1</client_name>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>4</messaggi-inviati>
+      <messaggi-ricevuti>4</messaggi-ricevuti>
+      <comandi-time>1</comandi-time>
+      <comandi-name>1</comandi-name>
+      <errori>0</errori>
+    </final_statistics>
+    <entry timestamp="10:57:28" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato</message>
+    </entry>
+    <entry timestamp="10:57:28" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="10:57:28" level="INFO" type="CONNECTION">
+      <message>Connesso al server 127.0.0.1:12345</message>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:29" level="INFO" type="SEND">
+      <message>Inviato comando: ciao</message>
+      <command>ciao</command>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:29" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'ciao' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:32" level="INFO" type="SEND">
+      <message>Inviato comando: sono filippo</message>
+      <command>sono filippo</command>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:32" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'sono filippo' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:34" level="INFO" type="SEND">
+      <message>Inviato comando: TIME</message>
+      <command>TIME</command>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:57:34" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client2 (127.0.0.1) - Ora corrente: 10:57:34</response>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:58:08" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:58:09" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client2 (127.0.0.1) - Disconnessione in corso...</response>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:58:09" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <client_name>client2</client_name>
+    </entry>
+    <entry timestamp="10:58:09" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <client_name>client2</client_name>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>4</messaggi-inviati>
+      <messaggi-ricevuti>4</messaggi-ricevuti>
+      <comandi-time>1</comandi-time>
+      <comandi-name>0</comandi-name>
+      <errori>0</errori>
+    </final_statistics>
+    <entry timestamp="11:02:08" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato</message>
+    </entry>
+    <entry timestamp="11:02:08" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="11:02:08" level="INFO" type="CONNECTION">
+      <message>Connesso al server 127.0.0.1:12345</message>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:02:21" level="INFO" type="SEND">
+      <message>Inviato comando: ciao</message>
+      <command>ciao</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:02:21" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'ciao' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:02:45" level="INFO" type="SEND">
+      <message>Inviato comando: NAME</message>
+      <command>NAME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:02:45" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Hostname server: W11STAT-7-221</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:03:17" level="INFO" type="SEND">
+      <message>Inviato comando: HOSTNAME</message>
+      <command>HOSTNAME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:03:17" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'HOSTNAME' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:03:35" level="INFO" type="SEND">
+      <message>Inviato comando: NAME</message>
+      <command>NAME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:03:35" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Hostname server: W11STAT-7-221</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Disconnessione in corso...</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:06:12" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <client_name>client1</client_name>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>5</messaggi-inviati>
+      <messaggi-ricevuti>5</messaggi-ricevuti>
+      <comandi-time>0</comandi-time>
+      <comandi-name>2</comandi-name>
+      <errori>0</errori>
+    </final_statistics>
+    <entry timestamp="11:17:33" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato</message>
+    </entry>
+    <entry timestamp="11:17:33" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="11:17:33" level="INFO" type="CONNECTION">
+      <message>Connesso al server 127.0.0.1:12345</message>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:34" level="INFO" type="SEND">
+      <message>Inviato comando: ciao</message>
+      <command>ciao</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:35" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'ciao' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:39" level="INFO" type="SEND">
+      <message>Inviato comando: TIME</message>
+      <command>TIME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:39" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Ora corrente: 11:17:39</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Disconnessione in corso...</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:17:53" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <client_name>client1</client_name>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>3</messaggi-inviati>
+      <messaggi-ricevuti>3</messaggi-ricevuti>
+      <comandi-time>1</comandi-time>
+      <comandi-name>0</comandi-name>
+      <errori>0</errori>
+    </final_statistics>
+    <entry timestamp="11:26:43" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato</message>
+    </entry>
+    <entry timestamp="11:26:43" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 127.0.0.1:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="11:26:44" level="INFO" type="CONNECTION">
+      <message>Connesso al server 127.0.0.1:12345</message>
+      <server_host>127.0.0.1</server_host>
+      <server_port>12345</server_port>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:26:52" level="INFO" type="SEND">
+      <message>Inviato comando: ciao</message>
+      <command>ciao</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:26:52" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'ciao' non riconosciuto. Comandi: TIME, NAME, STATS, EXIT</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:26:59" level="INFO" type="SEND">
+      <message>Inviato comando: NAME</message>
+      <command>NAME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:26:59" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Hostname server: W11STAT-7-221</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:05" level="INFO" type="SEND">
+      <message>Inviato comando: TIME</message>
+      <command>TIME</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:05" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Ora corrente: 11:27:05</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:44" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:44" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ciao client1 (127.0.0.1) - Disconnessione in corso...</response>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:44" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <client_name>client1</client_name>
+    </entry>
+    <entry timestamp="11:27:45" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <client_name>client1</client_name>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>4</messaggi-inviati>
+      <messaggi-ricevuti>4</messaggi-ricevuti>
+      <comandi-time>1</comandi-time>
+      <comandi-name>1</comandi-name>
+      <errori>0</errori>
+    </final_statistics>
+  </session>
+</log>
