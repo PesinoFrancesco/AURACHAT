@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log client_name="PC-Francesco" date="2026-01-15">
+  <session start_time="2026-01-15 19:30:36" end_time="2026-01-15 19:33:49">
+    <entry timestamp="19:30:36" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato con discovery</message>
+    </entry>
+    <entry timestamp="19:30:36" level="INFO" type="DISCOVERY_START">
+      <message>Inizio ricerca server via UDP broadcast</message>
+      <discovery_port>9999</discovery_port>
+      <timeout>5</timeout>
+    </entry>
+    <entry timestamp="19:30:42" level="WARNING" type="DISCOVERY_FAILED">
+      <message>Nessun server trovato sulla rete</message>
+      <attempts>4</attempts>
+      <timeout>5</timeout>
+    </entry>
+    <entry timestamp="19:31:41" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato con discovery</message>
+    </entry>
+    <entry timestamp="19:31:41" level="INFO" type="DISCOVERY_START">
+      <message>Inizio ricerca server via UDP broadcast</message>
+      <discovery_port>9999</discovery_port>
+      <timeout>5</timeout>
+    </entry>
+    <entry timestamp="19:31:41" level="INFO" type="DISCOVERY_SUCCESS">
+      <message>Server trovato: PC-Francesco (192.168.1.74:12345)</message>
+      <server_ip>192.168.1.74</server_ip>
+      <server_hostname>PC-Francesco</server_hostname>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="19:31:41" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 192.168.1.74:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>192.168.1.74</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="19:31:41" level="INFO" type="CONNECTION">
+      <message>Connesso al server 192.168.1.74:12345</message>
+      <server_host>192.168.1.74</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="19:32:07" level="INFO" type="AUTH">
+      <message>Registrazione completata per ciao</message>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:32:22" level="INFO" type="SEND">
+      <message>Inviato comando: info 1</message>
+      <command>info 1</command>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:32:22" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Client collegati: 1
+Totale connessioni: 1</response>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:32:28" level="INFO" type="SEND">
+      <message>Inviato comando: 4</message>
+      <command>4</command>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:32:28" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando '4' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT</response>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:32:31" level="INFO" type="SEND">
+      <message>Inviato comando: info 4</message>
+      <command>info 4</command>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:32:32" level="INFO" type="INFO_4_LOCAL">
+      <message>Informazioni di rete del client elaborate localmente</message>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:33:49" level="INFO" type="SEND">
+      <message>Inviato comando: exit</message>
+      <command>exit</command>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:33:49" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Disconnessione in corso...</response>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:33:49" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <username>ciao</username>
+    </entry>
+    <entry timestamp="19:33:49" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <username>ciao</username>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>4</messaggi-inviati>
+      <messaggi-ricevuti>4</messaggi-ricevuti>
+      <comandi-time>0</comandi-time>
+      <comandi-name>0</comandi-name>
+      <comandi-info>2</comandi-info>
+      <errori>0</errori>
+    </final_statistics>
+  </session>
+</log>
