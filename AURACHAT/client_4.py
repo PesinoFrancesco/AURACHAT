@@ -32,7 +32,8 @@ statistiche = {
     'messaggi_ricevuti': 0,
     'comandi_time': 0,
     'comandi_name': 0,
-    'comandi_info': 0,  # aggiunto per INFO
+    'comandi_info': 0,
+    'comandi_log' :0,  
     'errori': 0
 }
 
@@ -118,6 +119,7 @@ def mostra_menu():
     print("                3: Info rete del server")
     print("                4: Info rete del client")
     print("                5: Lista utenti per chat")
+    print("  LOG    → Scarica i log XML del server")
     print("  STATS  → Mostra statistiche server")
     print("  EXIT   → Disconnetti e chiudi client")
     print("  HELP   → Mostra questo menu")
@@ -489,7 +491,7 @@ def main():
     try:
         while True:
             print("\n" + "-" * 50)
-            messaggio = input(f"[{Colori.BLU}{username}{Colori.RESET}] Comando (HELP per aiuto): ").strip()
+            messaggio = input(f"[{Colori.BLU}{username}{Colori.RESET}] Comando ({Colori.GIALLO}HELP{Colori.RESET} per aiuto): ").strip()
             
             if messaggio.upper() == "HELP":
                 mostra_menu()
@@ -515,6 +517,73 @@ def main():
                     statistiche['comandi_name'] += 1
                 elif cmd.startswith("INFO"):
                     statistiche['comandi_info'] += 1
+                elif cmd == "LOG":
+                    statistiche["comandi_log"] += 1
+                    try:
+        # Ricevi dimensione
+                        data = mio_socket.recv(1024).decode('utf-8', errors='ignore')
+                        
+                        if data.startswith("LOG_SIZE|"):
+                            dimensione = int(data.split('|')[1])
+                            print(f"\n{Colori.CIANO}📥 Ricezione log del server...{Colori.RESET}")
+                            print(f"   Dimensione: {dimensione} bytes ({dimensione/1024:.2f} KB)")
+                            
+                            # Conferma ricezione
+                            mio_socket.send("READY".encode('utf-8'))
+                            
+                            # Ricevi log completi in chunk
+                            log_data = b""
+                            bytes_ricevuti = 0
+                            
+                            while bytes_ricevuti < dimensione:
+                                chunk = mio_socket.recv(4096)
+                                if not chunk:
+                                    break
+                                log_data += chunk
+                                bytes_ricevuti += len(chunk)
+                                
+                                # Mostra progresso
+                                percentuale = (bytes_ricevuti / dimensione) * 100
+                                print(f"   Progresso: {percentuale:.1f}%", end='\r')
+                            
+                            print()  # Nuova riga dopo progresso
+                            
+                            # Salva in file locale
+                            log_filename_client = f"logs/server_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xml"
+                            Path("logs").mkdir(exist_ok=True)
+                            
+                            with open(log_filename_client, 'wb') as f:
+                                f.write(log_data)
+                            
+                            print(f"{Colori.VERDE}✓ Log salvati con successo!{Colori.RESET}")
+                            print(f"   Percorso: {Colori.BLU}{log_filename_client}{Colori.RESET}")
+                            print(f"   Dimensione: {len(log_data)} bytes")
+                            
+                            log_to_xml(log_filename, "INFO", "LOG_RECEIVED",
+                                    f"Log server scaricati",
+                                    username=username,
+                                    file_path=log_filename_client,
+                                    file_size=len(log_data))
+                            
+                        elif data.startswith("LOG_ERROR|"):
+                            errore = data.split('|')[1]
+                            print(f"{Colori.ROSSO}✗ Errore: {errore}{Colori.RESET}")
+                            log_to_xml(log_filename, "ERROR", "LOG_ERROR",
+                                    f"Errore ricezione log: {errore}",
+                                    username=username)
+                        else:
+                            print(f"{Colori.GIALLO}⚠ Risposta inattesa dal server{Colori.RESET}")
+                    
+                    except Exception as e:
+                        print(f"{Colori.ROSSO}✗ Errore durante download log: {e}{Colori.RESET}")
+                        log_to_xml(log_filename, "ERROR", "LOG_DOWNLOAD_ERROR",
+                                f"Errore download log: {e}",
+                                username=username,
+                                exception_type=type(e).__name__)
+                        statistiche['errori'] += 1
+                    
+                    # IMPORTANTE: Salta la normale ricezione della risposta
+                    continue
                 
             except Exception as e:
                 log_to_xml(log_filename, "ERROR", "SEND_ERROR",

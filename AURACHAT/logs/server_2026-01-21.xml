@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log server_name="Filippo-PC" date="2026-01-21">
+  <session start_time="2026-01-21 15:17:21" end_time="2026-01-21 15:24:11">
+    <entry timestamp="15:17:21" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato con sistema autenticazione</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="15:17:33" level="INFO" type="AUTH">
+      <message>Login effettuato: filippo</message>
+      <username>filippo</username>
+      <client_ip>10.5.0.2</client_ip>
+      <client_port>25331</client_port>
+    </entry>
+    <entry timestamp="15:17:33" level="INFO" type="CONNECTION">
+      <message>Utente filippo connesso da 10.5.0.2:25331</message>
+      <username>filippo</username>
+      <client_ip>10.5.0.2</client_ip>
+      <client_port>25331</client_port>
+    </entry>
+    <entry timestamp="15:17:47" level="INFO" type="REQUEST">
+      <message>Richiesta 'jj' da filippo</message>
+      <username>filippo</username>
+      <command>jj</command>
+    </entry>
+    <entry timestamp="15:17:52" level="INFO" type="REQUEST">
+      <message>Richiesta 'j' da filippo</message>
+      <username>filippo</username>
+      <command>j</command>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIt' da filippo</message>
+      <username>filippo</username>
+      <command>EXIt</command>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da filippo</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per filippo</message>
+      <username>filippo</username>
+      <active_threads>2</active_threads>
+    </entry>
+    <entry timestamp="15:23:26" level="INFO" type="SERVER_SHUTDOWN">
+      <message>Server chiuso correttamente</message>
+    </entry>
+    <final_statistics>
+      <totale-connessioni>1</totale-connessioni>
+      <connessioni-attive>0</connessioni-attive>
+      <comandi-time>0</comandi-time>
+      <comandi-name>0</comandi-name>
+      <comandi-exit>1</comandi-exit>
+      <comandi-log>0</comandi-log>
+      <comandi-invalidi>2</comandi-invalidi>
+      <login-successo>1</login-successo>
+      <registrazioni>0</registrazioni>
+      <comandi-info>0</comandi-info>
+    </final_statistics>
+    <entry timestamp="15:23:29" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato con sistema autenticazione</message>
+      <port>12345</port>
+      <host>0.0.0.0</host>
+    </entry>
+    <entry timestamp="15:23:36" level="INFO" type="AUTH">
+      <message>Login effettuato: filippo</message>
+      <username>filippo</username>
+      <client_ip>10.5.0.2</client_ip>
+      <client_port>38712</client_port>
+    </entry>
+    <entry timestamp="15:23:36" level="INFO" type="CONNECTION">
+      <message>Utente filippo connesso da 10.5.0.2:38712</message>
+      <username>filippo</username>
+      <client_ip>10.5.0.2</client_ip>
+      <client_port>38712</client_port>
+    </entry>
+    <entry timestamp="15:23:38" level="INFO" type="REQUEST">
+      <message>Richiesta 'cia' da filippo</message>
+      <username>filippo</username>
+      <command>cia</command>
+    </entry>
+    <entry timestamp="15:23:44" level="INFO" type="REQUEST">
+      <message>Richiesta 'TIME' da filippo</message>
+      <username>filippo</username>
+      <command>TIME</command>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="REQUEST">
+      <message>Richiesta 'EXIT' da filippo</message>
+      <username>filippo</username>
+      <command>EXIT</command>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da filippo</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per filippo</message>
+      <username>filippo</username>
+      <active_threads>2</active_threads>
+    </entry>
+    <entry timestamp="15:24:11" level="INFO" type="SERVER_SHUTDOWN">
+      <message>Server chiuso correttamente</message>
+    </entry>
+    <final_statistics>
+      <totale-connessioni>1</totale-connessioni>
+      <connessioni-attive>0</connessioni-attive>
+      <comandi-time>1</comandi-time>
+      <comandi-name>0</comandi-name>
+      <comandi-exit>1</comandi-exit>
+      <comandi-log>0</comandi-log>
+      <comandi-invalidi>1</comandi-invalidi>
+      <login-successo>1</login-successo>
+      <registrazioni>0</registrazioni>
+      <comandi-info>0</comandi-info>
+    </final_statistics>
+  </session>
+</log>

@@ -38,6 +38,7 @@ statistiche = {
     'comandi_time': 0,
     'comandi_name': 0,
     'comandi_exit': 0,
+    'comandi_log' :0,
     'comandi_invalidi': 0,
     'login_successo': 0,
     'registrazioni': 0,
@@ -400,9 +401,14 @@ def gestisci_client(mio_socket, client_address, log_filename):
         while server_running:
             data = mio_socket.recv(1024).decode('utf-8', errors='ignore').strip()
             if data:
-                comandi_validi = ["TIME", "NAME", "STATS", "EXIT", "INFO"]
+                comandi_validi = ["TIME", "NAME", "STATS", "EXIT", "INFO", "LOG"]
                 comando_upper = data.upper()
-                print(f"[CLIENT {username}] Messaggio: {data}")
+                if data.upper() in comandi_validi:
+                    
+                    print(f"[CLIENT {Colori.BLU}{username}{Colori.RESET}] Messaggio: {Colori.VERDE}{data}{Colori.RESET}")
+                else:
+                    print(f"[CLIENT {Colori.BLU}{username}{Colori.RESET}] Messaggio: {data}")
+
             
             if not data:
                 log_to_xml(log_filename, "INFO", "DISCONNECTION",
@@ -446,6 +452,7 @@ def gestisci_client(mio_socket, client_address, log_filename):
                               f"Attive: {statistiche['connessioni_attive']} | "
                               f"TIME: {statistiche['comandi_time']} | "
                               f"NAME: {statistiche['comandi_name']} | "
+                              f"LOG:  {statistiche['comandi_log']}  | "
                               f"Registrazioni: {statistiche['registrazioni']}")
                 mio_socket.send(risposta.encode('utf-8'))
                 
@@ -453,6 +460,49 @@ def gestisci_client(mio_socket, client_address, log_filename):
                 risposta = gestisci_comando_info(data, client_address, username)
                 mio_socket.send(risposta.encode('utf-8'))
                 aggiorna_stats('comandi_info')
+
+            elif comando == "LOG":
+                try:
+                    # Leggi il file XML di log del server
+                    with open(log_filename, 'r', encoding='utf-8') as f:
+                        contenuto_log = f.read()
+                    
+                    # Calcola dimensione
+                    dimensione = len(contenuto_log.encode('utf-8'))
+                    
+                    # Invia dimensione al client
+                    mio_socket.send(f"LOG_SIZE|{dimensione}".encode('utf-8'))
+                    
+                    # Attendi conferma dal client
+                    ack = mio_socket.recv(1024).decode('utf-8', errors='ignore')
+                    
+                    if ack == "READY":
+                        # Invia contenuto XML completo
+                        mio_socket.send(contenuto_log.encode('utf-8'))
+                        
+                        log_to_xml(log_filename, "INFO", "LOG_SENT",
+                                f"Log inviati a {username}",
+                                username=username,
+                                log_size=dimensione)
+                        
+                        print(f"{Colori.VERDE}[LOG] File inviato a {username} ({dimensione} bytes){Colori.RESET}")
+                    else:
+                        mio_socket.send(f"{Colori.ROSSO}LOG_ERROR|Client non pronto".encode('utf-8'))
+                        
+                except FileNotFoundError:
+                    errore = "File log non trovato"
+                    mio_socket.send(f"{Colori.ROSSO}LOG_ERROR|{errore}".encode('utf-8'))
+                    log_to_xml(log_filename, "ERROR", "LOG_ERROR",
+                            f"Errore invio log a {username}: file non trovato",
+                            username=username)
+                except Exception as e:
+                    errore = f"Errore lettura log: {e}"
+                    mio_socket.send(f"{Colori.ROSSO}LOG_ERROR|{errore}".encode('utf-8'))
+                    log_to_xml(log_filename, "ERROR", "LOG_ERROR",
+                            f"Errore invio log a {username}: {e}",
+                            username=username,
+                            exception_type=type(e).__name__)
+                aggiorna_stats('comandi_log')
                 
             else:
                 risposta = f"Comando '{data}' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT"

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log client_name="Filippo-PC" date="2026-01-20">
+  <session start_time="2026-01-20 19:46:42" end_time="2026-01-20 19:49:50">
+    <entry timestamp="19:46:42" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato con discovery</message>
+    </entry>
+    <entry timestamp="19:46:42" level="INFO" type="DISCOVERY_START">
+      <message>Inizio ricerca server via UDP broadcast</message>
+      <discovery_port>9999</discovery_port>
+      <timeout>5</timeout>
+    </entry>
+    <entry timestamp="19:46:42" level="INFO" type="DISCOVERY_SUCCESS">
+      <message>Server trovato: Filippo-PC (10.5.0.2:12345)</message>
+      <server_ip>10.5.0.2</server_ip>
+      <server_hostname>Filippo-PC</server_hostname>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="19:46:42" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 10.5.0.2:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>10.5.0.2</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="19:46:42" level="INFO" type="CONNECTION">
+      <message>Connesso al server 10.5.0.2:12345</message>
+      <server_host>10.5.0.2</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="19:47:55" level="INFO" type="AUTH">
+      <message>Registrazione completata per filippo</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:48:13" level="INFO" type="SEND">
+      <message>Inviato comando: TIME</message>
+      <command>TIME</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:48:13" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ora corrente: 19:48:13</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:48:50" level="INFO" type="SEND">
+      <message>Inviato comando: NAME</message>
+      <command>NAME</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:48:50" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Hostname server: Filippo-PC</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:12" level="INFO" type="SEND">
+      <message>Inviato comando: STATS</message>
+      <command>STATS</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:12" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>STATISTICHE SERVER | Tot.Conn: 1 | Attive: 1 | TIME: 1 | NAME: 1 | LOG:  0  | Registrazioni: 1</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:20" level="INFO" type="SEND">
+      <message>Inviato comando: ciao</message>
+      <command>ciao</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:20" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'ciao' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:28" level="INFO" type="SEND">
+      <message>Inviato comando: LOG</message>
+      <command>LOG</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:28" level="INFO" type="LOG_RECEIVED">
+      <message>Log server scaricati</message>
+      <username>filippo</username>
+      <file_path>logs/server_log_20260120_194928.xml</file_path>
+      <file_size>1819</file_size>
+    </entry>
+    <entry timestamp="19:49:50" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:50" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Disconnessione in corso...</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:50" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="19:49:50" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <username>filippo</username>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>6</messaggi-inviati>
+      <messaggi-ricevuti>5</messaggi-ricevuti>
+      <comandi-time>1</comandi-time>
+      <comandi-name>1</comandi-name>
+      <comandi-info>0</comandi-info>
+      <comandi-log>1</comandi-log>
+      <errori>0</errori>
+    </final_statistics>
+  </session>
+</log>

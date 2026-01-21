@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log client_name="Filippo-PC" date="2026-01-21">
+  <session start_time="2026-01-21 15:17:25" end_time="2026-01-21 15:23:57">
+    <entry timestamp="15:17:25" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato con discovery</message>
+    </entry>
+    <entry timestamp="15:17:25" level="INFO" type="DISCOVERY_START">
+      <message>Inizio ricerca server via UDP broadcast</message>
+      <discovery_port>9999</discovery_port>
+      <timeout>5</timeout>
+    </entry>
+    <entry timestamp="15:17:25" level="INFO" type="DISCOVERY_SUCCESS">
+      <message>Server trovato: Filippo-PC (10.5.0.2:12345)</message>
+      <server_ip>10.5.0.2</server_ip>
+      <server_hostname>Filippo-PC</server_hostname>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="15:17:25" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 10.5.0.2:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>10.5.0.2</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="15:17:25" level="INFO" type="CONNECTION">
+      <message>Connesso al server 10.5.0.2:12345</message>
+      <server_host>10.5.0.2</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="15:17:33" level="INFO" type="AUTH">
+      <message>Autenticazione riuscita per filippo</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:47" level="INFO" type="SEND">
+      <message>Inviato comando: jj</message>
+      <command>jj</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:47" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'jj' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:52" level="INFO" type="SEND">
+      <message>Inviato comando: j</message>
+      <command>j</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:52" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'j' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="SEND">
+      <message>Inviato comando: EXIt</message>
+      <command>EXIt</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Disconnessione in corso...</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:17:58" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <username>filippo</username>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>3</messaggi-inviati>
+      <messaggi-ricevuti>3</messaggi-ricevuti>
+      <comandi-time>0</comandi-time>
+      <comandi-name>0</comandi-name>
+      <comandi-info>0</comandi-info>
+      <comandi-log>0</comandi-log>
+      <errori>0</errori>
+    </final_statistics>
+    <entry timestamp="15:23:31" level="INFO" type="CLIENT_START">
+      <message>Client TCP avviato con discovery</message>
+    </entry>
+    <entry timestamp="15:23:31" level="INFO" type="DISCOVERY_START">
+      <message>Inizio ricerca server via UDP broadcast</message>
+      <discovery_port>9999</discovery_port>
+      <timeout>5</timeout>
+    </entry>
+    <entry timestamp="15:23:31" level="INFO" type="DISCOVERY_SUCCESS">
+      <message>Server trovato: Filippo-PC (10.5.0.2:12345)</message>
+      <server_ip>10.5.0.2</server_ip>
+      <server_hostname>Filippo-PC</server_hostname>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="15:23:31" level="INFO" type="CONNECTION_ATTEMPT">
+      <message>Tentativo 1/3 di connessione a 10.5.0.2:12345</message>
+      <attempt>1</attempt>
+      <max_attempts>3</max_attempts>
+      <server_host>10.5.0.2</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="15:23:31" level="INFO" type="CONNECTION">
+      <message>Connesso al server 10.5.0.2:12345</message>
+      <server_host>10.5.0.2</server_host>
+      <server_port>12345</server_port>
+    </entry>
+    <entry timestamp="15:23:36" level="INFO" type="AUTH">
+      <message>Autenticazione riuscita per filippo</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:38" level="INFO" type="SEND">
+      <message>Inviato comando: cia</message>
+      <command>cia</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:38" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Comando 'cia' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:44" level="INFO" type="SEND">
+      <message>Inviato comando: TIME</message>
+      <command>TIME</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:44" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Ora corrente: 15:23:44</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="SEND">
+      <message>Inviato comando: EXIT</message>
+      <command>EXIT</command>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="RECEIVE">
+      <message>Ricevuta risposta dal server</message>
+      <response>Disconnessione in corso...</response>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="EXIT">
+      <message>Comando EXIT inviato - Chiusura client</message>
+      <username>filippo</username>
+    </entry>
+    <entry timestamp="15:23:57" level="INFO" type="DISCONNECTION">
+      <message>Socket chiuso correttamente</message>
+      <username>filippo</username>
+    </entry>
+    <final_statistics>
+      <messaggi-inviati>3</messaggi-inviati>
+      <messaggi-ricevuti>3</messaggi-ricevuti>
+      <comandi-time>1</comandi-time>
+      <comandi-name>0</comandi-name>
+      <comandi-info>0</comandi-info>
+      <comandi-log>0</comandi-log>
+      <errori>0</errori>
+    </final_statistics>
+  </session>
+</log>
