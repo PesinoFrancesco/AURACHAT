@@ -451,7 +451,7 @@ def gestisci_client(mio_socket, client_address, log_filename):
 
                 
             else:
-                risposta = f"Comando '{data}' non riconosciuto. Comandi: TIME, NAME, INFO, STATS, EXIT"
+                risposta = f"Comando '{data}' non riconosciuto. Comandi: TIME, NAME, INFO, EXIT"
                 mio_socket.send(risposta.encode('utf-8'))
 
                 
