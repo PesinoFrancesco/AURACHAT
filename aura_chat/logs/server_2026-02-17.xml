@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log server_name="PC-Francesco" date="2026-02-17">
+  <session start_time="2026-02-17 15:04:58">
+    <entry timestamp="15:04:58" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato con sistema autenticazione</message>
+    </entry>
+    <entry timestamp="15:05:14" level="INFO" type="AUTH">
+      <message>Login effettuato: ciao</message>
+    </entry>
+    <entry timestamp="15:05:14" level="INFO" type="CONNECTION">
+      <message>Utente ciao connesso da 192.168.1.108:59269</message>
+    </entry>
+    <entry timestamp="16:35:39" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da ciao</message>
+    </entry>
+    <entry timestamp="16:35:39" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per ciao</message>
+    </entry>
+    <entry timestamp="16:35:44" level="INFO" type="SERVER_SHUTDOWN">
+      <message>Server chiuso correttamente</message>
+    </entry>
+    <entry timestamp="16:35:51" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato con sistema autenticazione</message>
+    </entry>
+    <entry timestamp="16:36:32" level="INFO" type="REGISTRATION">
+      <message>Nuovo utente registrato: agata</message>
+    </entry>
+    <entry timestamp="16:36:32" level="INFO" type="CONNECTION">
+      <message>Utente agata connesso da 192.168.1.108:56512</message>
+    </entry>
+    <entry timestamp="16:37:00" level="INFO" type="EXIT_REQUEST">
+      <message>EXIT richiesto da agata</message>
+    </entry>
+    <entry timestamp="16:37:00" level="INFO" type="THREAD_CLOSE">
+      <message>Chiusura thread per agata</message>
+    </entry>
+    <entry timestamp="16:37:04" level="INFO" type="SERVER_SHUTDOWN">
+      <message>Server chiuso correttamente</message>
+    </entry>
+  </session>
+</log>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log client_username="ciao" client_address="192.168.1.108:59269" date="2026-02-17">
+  <session start_time="2026-02-17 15:05:14" login_time="2026-02-17 15:05:14">
+    <entry timestamp="15:05:14" level="INFO" type="AUTH">
+      <message>Login effettuato da 192.168.1.108:59269</message>
+    </entry>
+    <entry timestamp="15:05:14" level="INFO" type="CONNECTION">
+      <message>Connesso al server</message>
+    </entry>
+    <entry timestamp="15:05:26" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: ASD</message>
+    </entry>
+    <entry timestamp="15:05:27" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: ASD</message>
+    </entry>
+    <entry timestamp="15:05:27" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: SAD</message>
+    </entry>
+    <entry timestamp="15:05:27" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: AS</message>
+    </entry>
+    <entry timestamp="15:05:27" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: D</message>
+    </entry>
+    <entry timestamp="15:05:27" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: AS</message>
+    </entry>
+    <entry timestamp="15:05:27" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: D</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: DASW</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: D</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: QW</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: WERDQ</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: WD</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: SA</message>
+    </entry>
+    <entry timestamp="15:05:28" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: D</message>
+    </entry>
+    <entry timestamp="15:05:29" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: ASD</message>
+    </entry>
+    <entry timestamp="15:05:29" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: QW</message>
+    </entry>
+    <entry timestamp="15:05:29" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: ASD</message>
+    </entry>
+    <entry timestamp="15:05:29" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: AS</message>
+    </entry>
+    <entry timestamp="15:05:31" level="INFO" type="RESPONSE">
+      <message>Risposta TIME ricevuta</message>
+    </entry>
+    <entry timestamp="15:05:33" level="INFO" type="RESPONSE">
+      <message>Risposta NAME ricevuta</message>
+    </entry>
+    <entry timestamp="15:05:36" level="INFO" type="RESPONSE">
+      <message>Risposta INFO ricevuta</message>
+    </entry>
+    <entry timestamp="15:05:39" level="INFO" type="RESPONSE">
+      <message>Risposta INFO ricevuta</message>
+    </entry>
+    <entry timestamp="15:05:41" level="INFO" type="RESPONSE">
+      <message>Risposta INFO ricevuta</message>
+    </entry>
+    <entry timestamp="15:05:45" level="INFO" type="RESPONSE">
+      <message>Risposta INFO ricevuta</message>
+    </entry>
+    <entry timestamp="15:05:47" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: SAD</message>
+    </entry>
+    <entry timestamp="15:05:47" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: D</message>
+    </entry>
+    <entry timestamp="15:05:47" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: AS</message>
+    </entry>
+    <entry timestamp="15:05:47" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: DA</message>
+    </entry>
+    <entry timestamp="15:05:47" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: SD</message>
+    </entry>
+    <entry timestamp="15:05:47" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: AS</message>
+    </entry>
+    <entry timestamp="15:05:48" level="WARNING" type="UNKNOWN_COMMAND">
+      <message>Comando non riconosciuto: D</message>
+    </entry>
+  </session>
+</log>

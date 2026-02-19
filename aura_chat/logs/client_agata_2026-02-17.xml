@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log client_username="agata" client_address="192.168.1.108:56512" date="2026-02-17">
+  <session start_time="2026-02-17 16:36:32" login_time="2026-02-17 16:36:32">
+    <entry timestamp="16:36:32" level="INFO" type="REGISTRATION">
+      <message>Account creato da 192.168.1.108:56512</message>
+    </entry>
+    <entry timestamp="16:36:32" level="INFO" type="CONNECTION">
+      <message>Connesso al server</message>
+    </entry>
+    <entry timestamp="16:37:00" level="INFO" type="EXIT">
+      <message>Comando EXIT eseguito</message>
+    </entry>
+    <entry timestamp="16:37:00" level="INFO" type="SESSION_END">
+      <message>Sessione terminata</message>
+    </entry>
+  </session>
+</log>

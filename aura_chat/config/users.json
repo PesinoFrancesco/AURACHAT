@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "ciao",
+      "password": "ciao",
+      "ip": "192.168.1.108",
+      "porta": 50496,
+      "data_registrazione": "2026-02-17T00:32:16.190075",
+      "ultimo_accesso": "2026-02-17T15:05:14.672823"
+    },
+    {
+      "username": "agata",
+      "password": "lovepesa",
+      "ip": "192.168.1.108",
+      "porta": 56512,
+      "data_registrazione": "2026-02-17T16:36:32.403240",
+      "ultimo_accesso": "2026-02-17T16:36:32.403240"
+    }
+  ]
+}

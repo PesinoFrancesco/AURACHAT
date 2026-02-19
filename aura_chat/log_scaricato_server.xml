@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<log server_name="PC-Francesco" date="2026-02-17">
+  <session start_time="2026-02-17 15:04:58">
+    <entry timestamp="15:04:58" level="INFO" type="SERVER_START">
+      <message>Server TCP avviato con sistema autenticazione</message>
+    </entry>
+    <entry timestamp="15:05:14" level="INFO" type="AUTH">
+      <message>Login effettuato: ciao</message>
+    </entry>
+    <entry timestamp="15:05:14" level="INFO" type="CONNECTION">
+      <message>Utente ciao connesso da 192.168.1.108:59269</message>
+    </entry>
+  </session>
+</log>
